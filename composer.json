@@ -1,0 +1,23 @@
+{
+    "name": "corviz/application",
+    "description": "Example application using corviz/framework package",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": ">=7",
+        "corviz/framework": "*@dev"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "application"
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../corvizfw"
+        }
+    ]
+}
