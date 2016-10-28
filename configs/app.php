@@ -2,9 +2,10 @@
 
 return [
     /*
-     * Controllers
+     * Namespaces
      */
     'controllersPrefix' => '\\App\\Controller\\',
+    'modelsPrefix' => '\\App\\Model\\',
 
     /*
      * Request parsers
