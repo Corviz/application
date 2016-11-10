@@ -5,7 +5,7 @@ return [
      * Namespaces
      */
     'controllersPrefix' => '\\App\\Controller\\',
-    'modelsPrefix' => '\\App\\Model\\',
+    'modelsPrefix'      => '\\App\\Model\\',
 
     /*
      * Request parsers
@@ -13,13 +13,13 @@ return [
     'requestParsers' => [
         \Corviz\Http\RequestParser\FormUrlEncodedParser::class,
         \Corviz\Http\RequestParser\MultipartFormDataParser::class,
-        \Corviz\Http\RequestParser\JsonParser::class
+        \Corviz\Http\RequestParser\JsonParser::class,
     ],
 
     /*
      * Middlewares
      */
     'middlewares' => [
-        'auth' => \App\Http\Middleware\Auth::class
-    ]
+        'auth' => \App\Http\Middleware\Auth::class,
+    ],
 ];

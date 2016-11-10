@@ -14,7 +14,7 @@ class Auth extends Middleware
     protected $authProvider;
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function handle(Closure $next)
     {

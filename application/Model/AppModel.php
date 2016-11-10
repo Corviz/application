@@ -6,5 +6,4 @@ use Corviz\Mvc\Model;
 
 class AppModel extends Model
 {
-
 }
