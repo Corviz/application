@@ -10,13 +10,13 @@ return [
     'requestParser' => [
         RequestParser\FormUrlEncodedParser::class,
         RequestParser\MultipartFormDataParser::class,
-        RequestParser\JsonParser::class
+        RequestParser\JsonParser::class,
     ],
 
     /*
      * Middlewares
      */
     'middleware' => [
-        'auth' => Middleware\Auth::class
-    ]
+        'auth' => Middleware\Auth::class,
+    ],
 ];
