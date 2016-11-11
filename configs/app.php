@@ -1,25 +1,22 @@
 <?php
 
-return [
-    /*
-     * Namespaces
-     */
-    'controllersPrefix' => '\\App\\Controller\\',
-    'modelsPrefix'      => '\\App\\Model\\',
+use \App\Http\Middleware;
+use \Corviz\Http\RequestParser;
 
+return [
     /*
      * Request parsers
      */
-    'requestParsers' => [
-        \Corviz\Http\RequestParser\FormUrlEncodedParser::class,
-        \Corviz\Http\RequestParser\MultipartFormDataParser::class,
-        \Corviz\Http\RequestParser\JsonParser::class,
+    'requestParser' => [
+        RequestParser\FormUrlEncodedParser::class,
+        RequestParser\MultipartFormDataParser::class,
+        RequestParser\JsonParser::class
     ],
 
     /*
      * Middlewares
      */
-    'middlewares' => [
-        'auth' => \App\Http\Middleware\Auth::class,
-    ],
+    'middleware' => [
+        'auth' => Middleware\Auth::class
+    ]
 ];
