@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\Auth;
 
 use Corviz\Behaviour\Singleton;
