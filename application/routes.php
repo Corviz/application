@@ -10,5 +10,4 @@ Route::get('/', [
     'controller' => Controller\Home::class,
     'action'     => 'index',
     'alias'      => 'home.index',
-    'middleware' => 'auth'
 ]);
