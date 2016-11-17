@@ -2,23 +2,23 @@
 
 namespace App\Http\Middleware;
 
-use App\Auth\AuthProvider;
+use App\Auth\Auth;
 use Closure;
 use Corviz\Http\Middleware;
 
-class Auth extends Middleware
+class AuthMiddleware extends Middleware
 {
     /**
-     * @var \App\Auth\AuthProvider
+     * @var \App\Auth\Auth
      */
-    protected $authProvider;
+    protected $auth;
 
     /**
      * {@inheritdoc}
      */
     public function handle(Closure $next)
     {
-        if ($this->authProvider->authenticated()) {
+        if ($this->auth->authenticated()) {
             return $next();
         }
 
@@ -28,10 +28,10 @@ class Auth extends Middleware
     /**
      * Authentication constructor.
      *
-     * @param \App\Auth\AuthProvider $authProvider
+     * @param \App\Auth\Auth $auth
      */
-    public function __construct(AuthProvider $authProvider)
+    public function __construct(Auth $auth)
     {
-        $this->authProvider = $authProvider;
+        $this->auth = $auth;
     }
 }

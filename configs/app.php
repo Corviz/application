@@ -5,18 +5,25 @@ use \Corviz\Http\RequestParser;
 
 return [
     /*
+     * Middlewares
+     */
+    'middleware' => [
+        'auth' => Middleware\AuthMiddleware::class,
+    ],
+
+    /*
+     * Application providers
+     */
+    'providers' => [
+        \App\Auth\AuthProvider::class,
+    ],
+
+    /*
      * Request parsers
      */
     'requestParser' => [
         RequestParser\FormUrlEncodedParser::class,
         RequestParser\MultipartFormDataParser::class,
         RequestParser\JsonParser::class,
-    ],
-
-    /*
-     * Middlewares
-     */
-    'middleware' => [
-        'auth' => Middleware\Auth::class,
     ],
 ];

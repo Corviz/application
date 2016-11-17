@@ -2,40 +2,15 @@
 
 namespace App\Auth;
 
-class AuthProvider
+use Corviz\DI\Provider;
+
+class AuthProvider extends Provider
 {
     /**
-     * Returns true if user is authenticated,
-     * otherwise returns false.
-     *
-     * @return bool
+     * {@inheritdoc}
      */
-    public function authenticated() : bool
+    public function register()
     {
-        //@TODO Implement authentication check.
-        return false;
-    }
-
-    /**
-     * Attempt to authenticate user.
-     *
-     * @param string $user
-     * @param string $password
-     *
-     * @return bool
-     */
-    public function login(string $user, string $password) : bool
-    {
-        //@TODO Implement login check.
-        return false;
-    }
-
-    /**
-     * Sign out current user.
-     */
-    public function logout() : bool
-    {
-        //@TODO Implement method.
-        return true;
+        $this->container()->setSingleton(Auth::class, Auth::getInstance());
     }
 }
