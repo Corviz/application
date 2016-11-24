@@ -9,6 +9,6 @@ class Home extends AppController
      */
     public function index()
     {
-        echo 'Hello world';
+        return $this->view('home/index');
     }
 }
