@@ -15,6 +15,7 @@ return [
      * Application providers
      */
     'providers' => [
+        \App\Provider\AppProvider::class,
         \App\Auth\AuthProvider::class,
     ],
 

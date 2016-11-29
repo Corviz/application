@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 use App\Auth\Auth;
 use Closure;
 use Corviz\Http\Middleware;
+use Corviz\Http\Response;
 
 class AuthMiddleware extends Middleware
 {
@@ -16,7 +17,7 @@ class AuthMiddleware extends Middleware
     /**
      * {@inheritdoc}
      */
-    public function handle(Closure $next)
+    public function handle(Closure $next) : Response
     {
         if ($this->auth->authenticated()) {
             return $next();
