@@ -10,7 +10,7 @@ class RoutingProvider extends Provider
 {
     /**
      * Include application routes here.
-     * Example:
+     * Example:.
      *
      * //Single route.
      * Route::get('/', [

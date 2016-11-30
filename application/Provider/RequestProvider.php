@@ -5,8 +5,8 @@ namespace App\Provider;
 use Corviz\DI\Provider;
 use Corviz\Http\Request;
 use Corviz\Http\RequestParser\FormUrlEncodedParser;
-use Corviz\Http\RequestParser\MultipartFormDataParser;
 use Corviz\Http\RequestParser\JsonParser;
+use Corviz\Http\RequestParser\MultipartFormDataParser;
 
 class RequestProvider extends Provider
 {
