@@ -4,17 +4,22 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b98a84d4f5860b2e1241b0320b9e47d3",
-    "content-hash": "ed323cc60516fabe0abf2417851bc005",
+    "hash": "94707ca240e906ca3c25af429b4ec7a5",
+    "content-hash": "ffa55d1aa2fc77c9f76ae3a4b6346bd7",
     "packages": [
         {
             "name": "corviz/framework",
-            "version": "dev-master",
+            "version": "v0.1-alpha",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Corviz/framework.git",
+                "reference": "e25962ab1d6fefdd67feb7c8f5743ff88953ae61"
+            },
             "dist": {
-                "type": "path",
-                "url": "../corvizfw",
-                "reference": "db6d7ed9c62c817f107e6f0f4414af9f043db28b",
-                "shasum": null
+                "type": "zip",
+                "url": "https://api.github.com/repos/Corviz/framework/zipball/e25962ab1d6fefdd67feb7c8f5743ff88953ae61",
+                "reference": "e25962ab1d6fefdd67feb7c8f5743ff88953ae61",
+                "shasum": ""
             },
             "require": {
                 "php": ">=7"
@@ -28,17 +33,19 @@
                     "Corviz\\": "./src"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "Low weight php framework"
+            "description": "Low weight php framework",
+            "time": "2016-11-29 23:30:33"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "corviz/framework": 20
+        "corviz/framework": 15
     },
     "prefer-stable": false,
     "prefer-lowest": false,
