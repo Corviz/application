@@ -9,16 +9,16 @@
     "packages": [
         {
             "name": "corviz/framework",
-            "version": "v0.1-alpha",
+            "version": "v0.1.1-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Corviz/framework.git",
-                "reference": "e25962ab1d6fefdd67feb7c8f5743ff88953ae61"
+                "reference": "a293a5f51402eff210a8466c2d08111f51160ffd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Corviz/framework/zipball/e25962ab1d6fefdd67feb7c8f5743ff88953ae61",
-                "reference": "e25962ab1d6fefdd67feb7c8f5743ff88953ae61",
+                "url": "https://api.github.com/repos/Corviz/framework/zipball/a293a5f51402eff210a8466c2d08111f51160ffd",
+                "reference": "a293a5f51402eff210a8466c2d08111f51160ffd",
                 "shasum": ""
             },
             "require": {
@@ -38,7 +38,7 @@
                 "MIT"
             ],
             "description": "Low weight php framework",
-            "time": "2016-11-29 23:30:33"
+            "time": "2016-12-01 20:22:19"
         }
     ],
     "packages-dev": [],

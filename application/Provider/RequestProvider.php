@@ -15,9 +15,21 @@ class RequestProvider extends Provider
      */
     public function register()
     {
+        /*
+         * The parsers *MUST* be registered before
+         * evaluating the request.
+         */
+        $this->registerParsers();
+
         //Register request in the container
         $this->container()->set(Request::class, Request::current());
+    }
 
+    /**
+     * Register request parsers here.
+     */
+    private function registerParsers()
+    {
         //Register parsers
         Request::registerParser(FormUrlEncodedParser::class);
         Request::registerParser(MultipartFormDataParser::class);
