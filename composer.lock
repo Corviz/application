@@ -4,21 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "94707ca240e906ca3c25af429b4ec7a5",
-    "content-hash": "ffa55d1aa2fc77c9f76ae3a4b6346bd7",
+    "content-hash": "3f0f1e4b96faba91e0eb957f3b8ca8aa",
     "packages": [
         {
             "name": "corviz/framework",
-            "version": "v0.1.1-alpha",
+            "version": "v0.2-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Corviz/framework.git",
-                "reference": "a293a5f51402eff210a8466c2d08111f51160ffd"
+                "reference": "c280b7bbe008364f05909abc20cb7bf321b6054d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Corviz/framework/zipball/a293a5f51402eff210a8466c2d08111f51160ffd",
-                "reference": "a293a5f51402eff210a8466c2d08111f51160ffd",
+                "url": "https://api.github.com/repos/Corviz/framework/zipball/c280b7bbe008364f05909abc20cb7bf321b6054d",
+                "reference": "c280b7bbe008364f05909abc20cb7bf321b6054d",
                 "shasum": ""
             },
             "require": {
@@ -38,14 +37,42 @@
                 "MIT"
             ],
             "description": "Low weight php framework",
-            "time": "2016-12-01 20:22:19"
+            "time": "2017-08-29T00:43:58+00:00"
+        },
+        {
+            "name": "corviz/pdo-connector",
+            "version": "v0.1-alpha",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Corviz/pdo-connector.git",
+                "reference": "1f4e16d7a2779f0abd648fe3e2f0b42ffa0a2b98"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Corviz/pdo-connector/zipball/1f4e16d7a2779f0abd648fe3e2f0b42ffa0a2b98",
+                "reference": "1f4e16d7a2779f0abd648fe3e2f0b42ffa0a2b98",
+                "shasum": ""
+            },
+            "require": {
+                "corviz/framework": "*@alpha"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Corviz\\Connector\\PDO\\": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "A database connector based on PDO",
+            "time": "2017-08-29T00:59:56+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "corviz/framework": 15
+        "corviz/framework": 15,
+        "corviz/pdo-connector": 15
     },
     "prefer-stable": false,
     "prefer-lowest": false,

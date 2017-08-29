@@ -5,7 +5,8 @@
     "license": "MIT",
     "require": {
         "php": ">=7",
-        "corviz/framework": "*@alpha"
+        "corviz/framework": "*@alpha",
+        "corviz/pdo-connector": "*@alpha"
     },
     "require-dev": {
     },
